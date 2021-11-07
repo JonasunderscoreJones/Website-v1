@@ -65,3 +65,8 @@ html {
 .nobar {
     overflow-y: hidden;
 }
+#subbutton {
+    color: white;
+    background-color: red;
+    border-radius: 2px;
+}
