@@ -1,11 +1,30 @@
 html {
 	scroll-behavior: smooth;
+    display: flex;
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #195294; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #10335C; 
+  }
 /* CUSTOM COLOR CLASSES */
 .custom1{color:white;background-color:#10335C}
 .custom2{background-color:#195294;color:white}
 /*SCROLL BACK TO TOP BUTTON*/
-#myBtn {
+#returntotop {
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -22,7 +41,7 @@ html {
     text-align: center;
   }
   
-  #myBtn:hover {
+  #returntotop:hover {
     background-color: #195294;
     width: 155px;
   }
@@ -44,3 +63,6 @@ html {
     background-color: #195294;
     width: 155px;
   }
+.nobar {
+    overflow-y: hidden;
+}
