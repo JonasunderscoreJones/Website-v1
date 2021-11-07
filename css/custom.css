@@ -1,6 +1,5 @@
 html {
 	scroll-behavior: smooth;
-    display: flex;
 }
 ::-webkit-scrollbar {
     width: 10px;
