@@ -334,12 +334,10 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  let user = getCookie("username");
+  let user = getCookie("firstvis");
   if (user != "") {
-    alert("bruh");
-    alert("Welcome again " + user);
   } else {
-     user = prompt("Please enter your name:","");
+     user = 0
      modal.style.display = "block";
      if (user != "" && user != null) {
        setCookie("username", user, 30);
