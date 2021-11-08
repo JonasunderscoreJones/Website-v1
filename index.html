@@ -96,13 +96,6 @@ body, html {
     <div id="navbottom"></div>
   </nav>
 <body>
- <div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
     <a href="#top" id="returntotop" title="Go to top">Return to Top<img src="src/arrow_up_icon.png" width="30px"></a>
 <!-- Navbar (sit on top) -->
 <div class="w3-top custom2 top" style="padding-left: 250px;">
@@ -305,53 +298,6 @@ function w3_open() {
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
-}
-var mybutton = document.getElementById("myBtn");
-  
-var modal = document.getElementById("myModal");
-var span = document.getElementsByClassName("close")[0];
-function setCookie(cname,cvalue,exdays) {
-  const d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  let expires = "expires=" + d.toGMTString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
-function checkCookie() {
-  let user = getCookie("firstvis");
-  if (user != "") {
-  } else {
-     user = 0
-     modal.style.display = "block";
-     if (user != "" && user != null) {
-       setCookie("username", user, 30);
-     }
-  }
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
 }
 </script>
 
