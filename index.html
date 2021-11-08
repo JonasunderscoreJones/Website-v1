@@ -96,6 +96,13 @@ body, html {
     <div id="navbottom"></div>
   </nav>
 <body>
+ <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
     <a href="#top" id="returntotop" title="Go to top">Return to Top<img src="src/arrow_up_icon.png" width="30px"></a>
 <!-- Navbar (sit on top) -->
 <div class="w3-top custom2 top" style="padding-left: 250px;">
@@ -301,6 +308,8 @@ function w3_close() {
 }
 var mybutton = document.getElementById("myBtn");
   
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
 function setCookie(cname,cvalue,exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -330,9 +339,19 @@ function checkCookie() {
     alert("Welcome again " + user);
   } else {
      user = prompt("Please enter your name:","");
+     modal.style.display = "block";
      if (user != "" && user != null) {
        setCookie("username", user, 30);
      }
+  }
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
 </script>
