@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="main.css">
     <title>$TITLE</title>
     <header>
-        <object data="topnav/index.html"> 
-            //TODO: add simple redirect for navigationn on browers with lack of object support
-        </object>
+        <link rel="stylesheet" href="topnav.css">
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <div class="dropmenu">
+              <button class="dropmenubtn navbarbtn">DropMenu 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropmenu-content">
+                <div class="header">
+                  <h2>Mega Menu</h2>
+                </div>   
+                <div class="row">
+                  <div class="column">
+                    <h3>Category 1</h3>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                  <div class="column">
+                    <h3>Category 2</h3>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                  <div class="column">
+                    <h3>Category 3</h3>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn navbarbtn">Dropdown 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
     </header>
-
-
+    <body>
+        uwu
+    </body>
 
     <footer>
-        <object data="footer/index.html"> 
-            //TODO: add simple redirect for navigationn on browers with lack of object support
-        </object>
+        <link rel="stylesheet" href="footer.css">
+        <div id="footer">
+            <a class="contactIcon" href="https://youtube.com/c/JonasJonesJonasJones/">
+                <div class="contactIconDiv">
+                    <img height="25px" src="src/youtube_icon.png">
+                </div>
+            </a>
+            <a class="contactIcon" href="https://github.com/J-onasJones/">
+                <div class="contactIconDiv">
+                    <img height="25px" src="src/github_icon.png">
+                </div>
+            </a>
+            <a class="contactIcon" href="https://discord.gg/V2EsuUVmWh/">
+                <div class="contactIconDiv">
+                    <img height="25px" src="src/discord_icon.png">
+                </div>
+            </a>
+            <a class="contactIcon" href="https://www.instagram.com/_jonas_jones_/">
+                <div class="contactIconDiv">
+                    <img height="25px" src="src/instagram_icon.png">
+                </div>
+            </a>
+            <a class="contactIcon" href="https://twitter.com/Jonas_Jones_/">
+                <div class="contactIconDiv">
+                    <img height="25px" src="src/twitter_icon.png">
+                </div>
+            </a>
+        </div>
+        
+
+        <script>
+            window.onscroll = function(ev) {
+                if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                    // you're at the bottom of the page
+                }
+            };
+        </script>
     </footer>
 </html>
