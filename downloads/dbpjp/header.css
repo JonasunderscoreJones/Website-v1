@@ -1,0 +1,30 @@
+  #header {
+    position: absolute;
+    top: 60;
+    width: 100%;
+    height: 500px;
+    background-image: url("/.src/misc/headerBg.png");
+    background-position: bottom;
+    background-size: cover;
+    z-index: -1;
+  }
+  #header h1 {
+    font-size: 150px;
+    padding-left: 70px;
+  }
+
+  
+  .header a {
+      font-size: 50px;
+  }
+
+  #error-msg {
+    color: #bababa;
+    margin-left: 200px;
+    margin-top: 300px;
+    margin-right: 100px;
+    border: 3px #bababa solid;
+    border-radius: 3px;
+    padding-left: 20px;
+    display: flex;
+  }
