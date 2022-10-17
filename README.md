@@ -1,7 +1,25 @@
 # J-onasJones.github.io
 
-You just found the repo for my Homepage (http://jonasjones.me/) I guess. It's still a wip (work in progress) but some of it is already done although it is definetly not final
+### *Massive Work in Progress (TM) on v2*
 
-# License
 
-This project is currently under the DWTFYW License which is subject to change.
+my website at https://jonasjones.me
+
+# Notepad for the dev
+*(aka me who had the amazing idea to write the website in plain html/css/js)*
+
+### LAYOUT THAT COULD ACTUALLY WORK WITH MODULAR HEADER/FOOTER:
+
+Header
+|
+ -> dropdown(s)
+
+ title inserted from body bellow (CSS: top: XXXpx)
+
+---
+
+body
+
+---
+
+ footer
