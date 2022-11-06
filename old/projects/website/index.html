@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<title>Website - Jonas_Jones</title>
+<link rel="icon" href="https://j-onasjones.github.io/src/logo_icon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://j-onasjones.github.io/css/main.css">
+<link rel="stylesheet" href="https://j-onasjones.github.io/css/font-lato.css">
+<link rel="stylesheet" href="https://j-onasjones.github.io/css/font-montserat.css">
+<link rel="stylesheet" href="https://j-onasjones.github.io/css/font-roboto.css">
+<link rel="stylesheet" href="https://j-onasjones.github.io/css/custom.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://j-onasjones.github.io/src/fnk5elzskdiy.png');
+  min-height: 400px;
+}
+
+/* Second image (projects) */
+.bgimg-2 {
+  background-image: url("https://j-onasjones.github.io/src/mup4yhdqjgm31.png");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://j-onasjones.github.io/src/make-screenshots-of-your-minecraft-builds-with-shaders.png");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+</style>
+<nav class="w3-sidebar w3-bar-block w3-custom1 w3-top" style="z-index:3;width: 260px; background-color: #10335C;" id="mySidebar">
+    <iframe src="https://j-onasjones.github.io/index-left" width="250px" height="99%" style="border:none;padding-top:3%"></iframe>
+  </nav>
+<body>
+    <a href="#top" id="returntotop" title="Go to top">Return to Top<img src="https://j-onasjones.github.io/src/arrow_up_icon.png" width="30px"></a>
+<!-- Navbar (sit on top) -->
+<div class="w3-top custom2 top" style="padding-left: 250px;">
+    <div class="w3-bar" id="myNavbar">
+        <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a class="w3-bar-item w3-hide-small"><i class="fa fa-envelope"></i>>></a>
+        <a href="https://youtube.com/c/JonasJonesJonasJones" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Youtube</a>
+        <a class="w3-bar-item w3-hide-small"><i class="fa fa-envelope"></i>-</a>
+        <a href="https://github.com/J-onasJones/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Github</a>
+        <a class="w3-bar-item w3-hide-small"><i class="fa fa-envelope"></i>-</a>
+        <a href="https://discord.gg/V2EsuUVmWh" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Discord</a>
+        <a class="w3-bar-item w3-hide-small"><i class="fa fa-envelope"></i>-</a>
+        <a href="https://www.instagram.com/_jonas_jones_/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Instagram</a>
+        <a href="https://j-onasjones.github.io/login.html" class="w3-bar-item w3-button w3-hide-small" style="float: right;"><i class="fa fa-envelope"></i> LOG IN with Jonas_Jones account</a>
+        </a>
+    </div>
+</div>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home" style="padding-left: 250px;">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-xxlarge w3-text-white w3-wide"><h1 style="font-size: 200px;padding-left: 250px; color:#10335C">Website</h1></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about" style="padding-left: 250px;">
+  <h3 class="w3-center">Template</h3>
+  <p class="w3-center"><em></em></p>
+  <p></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large" style="height:800px">
+      <p></p>
+      <div class="bgimg-1 w3-display-container w3-opacity-min">
+      </div>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>This website as been coded by me. It is inspired by my Youtube Channel theme.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'" style="padding-left: 250px;">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with projects Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" style="padding-left: 250px;">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide"><h1 style="font-size: 200px;padding-left: 250px; color:#10335C">CONTACT</h1></span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact" style="padding-left: 250px;">
+  <h3 class="w3-center">I guess those are the ways You can contact me:</h3>
+  <p class="w3-center"><em>Give me your sub or follow</em></p>
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter quarter">
+      <div class="w3-container custom1 w3-padding-16">
+        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>Youtube</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <a href="https://youtube.com/c/JonasJonesJonasJones" id="myBtn1" title="My YouTube channel" class="myBtn1">YouTube</a>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container custom1 w3-padding-16">
+        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>Github</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <a href="https://github.com/J-onasJones/" id="myBtn1" title="My Github profile" class="myBtn1">Github</a>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container custom1 w3-padding-16">
+        <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>Discord</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <a href="https://discord.gg/V2EsuUVmWh" id="myBtn1" title="My Github profile" class="myBtn1">Discord</a>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container custom1 w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>Instagram</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <a href="https://www.instagram.com/_jonas_jones_/" id="myBtn1" title="My Github profile" class="myBtn1">Instagram</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off" style="padding-left: 250px;">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Jonas_Jones - Website powered by Github I guess? - <a href="https://youtube.com/c/JonasJonesJonasJones">YOUTUBE</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+// Accordion 
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+var mybutton = document.getElementById("myBtn");
+</script>
+
+</body>
+</html>
