@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="css/main.css">
+    <title>$TITLE</title>
+    <header>
+      <link rel="stylesheet" href="css/topnav.css">
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="css/header.css">
+      <div class="navbar">
+          <a href="" style="padding: 3px;padding-bottom: 0px;"><img src="src/logos/logo_iconNoMargin.png" height="39px"></a>
+          <a href="#news">News</a>
+          <div class="dropmenu">
+            <button class="dropmenubtn navbarbtn" onclick="window.location.href='projects/index.html';">Projects<i class="fa fa-caret-down"></i></button>
+            <div class="dropmenu-content">
+              <div class="dropmenu-content-content">
+                <div class="header-mega">
+                  <h1>Project Overview</h1>
+                  <p><a href="#" style="font-size: 15px;padding: 0px;margin-top: -15px;">View all projects</a></p>
+                </div>   
+                <div class="row">
+                  <div class="column">
+                    <h3>Minecraft Mods</h3>
+                    <a href="#">ConsoleMC</a>
+                    <a href="#">SpotifyMC</a>
+                    <a href="#">Mystery-Mod</a>
+                  </div>
+                  <div class="column">
+                    <h3>Python</h3>
+                    <a href="#">Windows Bloatware Removal Tool</a>
+                    <a href="#">Bash Command Alias Editor</a>
+                    <a href="#">PI-MC-WATCHER</a>
+                  </div>
+                  <div class="column">
+                    <h3>Miscellaneous</h3>
+                    <a href="#">Homepage</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                  <div id="header-mega-all">
+                    <a href="#">View all projects</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn navbarbtn">Youtube<i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <div class="dropdown-content-content">
+              <a href="#">Info</a>
+              <a href="#">Visit channel</a>
+              <a href="#">Subscribe</a>
+            </div>
+            
+          </div>
+        </div>
+        <a href="#news">Contact</a>
+        <a href="#news" style="float: right;"><img src="src/icons/account.png" height="18px"></a>
+        <a href="#news" style="float: right;" onclick="toggleDarkMode();"><img src="src/icons/dark-mode.png" height="18px"></a>
+    
+      <div id="header">
+        <h1>$TITLE</h1>
+      </div>
+    </header>
+    <div id="error-msg">
+      <div style="width: 15%;">
+        <img src="src/icons/warning-symbolic.png" width="75%">
+      </div>
+      <div style="align-self: stretch;">
+        <p>See this message? This means that You are either using a browser that doesn't properly support this website or a Browser extension is modifiying this content (e.g. Dark Reader), try disabling it. Either way, You're missing out on content.</p>
+      </div>
+    </div>
+
+    <body>
+      <div class="body">
+      </div>
+    </body>
+
+    <footer>
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/assets.css">
+        <div id="footer">
+          <div id="innerFooterBox">
+            <div>
+              <a class="contactIcon" href="https://youtube.com/c/JonasJonesJonasJones/">
+                  <div class="contactIconDiv">
+                      <img height="25px" src="src/logos/youtube_icon.png">
+                  </div>
+              </a>
+              <a class="contactIcon" href="https://github.com/J-onasJones/">
+                  <div class="contactIconDiv">
+                      <img height="25px" src="src/logos/github_icon.png">
+                  </div>
+              </a>
+              <a class="contactIcon" href="https://discord.gg/V2EsuUVmWh/">
+                  <div class="contactIconDiv">
+                      <img height="25px" src="src/logos/discord_icon.png">
+                  </div>
+              </a>
+              <a class="contactIcon" href="https://www.instagram.com/_jonas_jones_/">
+                  <div class="contactIconDiv">
+                      <img height="25px" src="src/logos/instagram_icon.png">
+                  </div>
+              </a>
+              <a class="contactIcon" href="https://twitter.com/Jonas_Jones_/">
+                  <div class="contactIconDiv">
+                      <img height="25px" src="src/logos/twitter_icon.png">
+                  </div>
+              </a>
+            </div>
+            <div class="vl"></div>
+            <div id="topLinks">
+              <h1>Quick Access</h1>
+              <div><a href=""><img src="src/icons/news.png" height="23px" style="padding-right: 10px;">NEWS<i class="arrow right" style="border-color: white;"></i></a></div>
+              <div><a href=""><img src="src/icons/projects.png" height="23px" style="padding-right: 10px;">PROJECTS<i class="arrow right" style="border-color: white;"></i></a></div>
+              <div><a href=""><img src="src/icons/youtube.png" height="23px" style="padding-right: 10px;">YOUTUBE<i class="arrow right" style="border-color: white;"></i></a></div>
+              <div><a href=""><img src="src/icons/downloads.svg" height="23px" style="padding-right: 10px;">DOWNLOADS<i class="arrow right" style="border-color: white;"></i></a></div>
+              <div><a></a></div>
+              <div><a href=""><img src="src/icons/contact.png" height="23px" style="padding-right: 10px;">CONTACT<i class="arrow right" style="border-color: white;"></i></a></div>
+              <div><a href=""><img src="src/icons/license.png" height="23px" style="padding-right: 10px;">LICENSE <i class="arrow right" style="border-color: white;"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bar">
+          <a>Website by Jonas_Jones, hosted on GitHub - 2022</a>
+        </div>
+    </footer>
+
+    <script>
+      function toggleDarkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+
+</html>
