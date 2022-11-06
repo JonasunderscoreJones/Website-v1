@@ -23,3 +23,12 @@ body
 ---
 
  footer
+
+### work with cookies:
+- first time visiting homepage:
+    overview, featured, etc...
+- dark mode and preferences save
+
+### random stuff:
+- clean redirecting page
+- working rickroll
