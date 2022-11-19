@@ -1,7 +1,10 @@
 <html>
+    <style>
+        
+    </style>
     <body style="margin: 0px;">
         <link rel="icon" type="image/x-icon" href="/.src/assets/logos/logo_icon.png">
-        <link id="style-main" rel="stylesheet" href="/.src/css/main.css">
+        <link id="style-main" rel="stylesheet" href="/.src/css/light/main.css">
         <title>Template</title>
         <div id="headerDiv"><object type="text/html" data="header.html" style="overflow:hidden; width: 100%; height: 570px;"></object>
             <div id="headerContent" style="height: 90%;width:100%;position:absolute;top:55px;z-index: -2;">
@@ -12,4 +15,29 @@
         <div id="footerDiv" style="border: 1px solid blue;"><object type="text/html" data="footer.html" style="overflow:hidden; width: 100%; height: 151%"></object></div>
 
     </body>
+    <script>
+        // toggle dark mode
+        function toggleDarkMode() {
+          console.log('toggleDarkMode()');
+        var main = document.getElementById("style-main");
+        var topnav = document.getElementById("style-topnav");
+        var header = document.getElementById("style-header");
+        var footer = document.getElementById("style-footer");
+        var assets = document.getElementById("style-assets");
+  
+        if (main.href.match("light")) {
+          main.href = "/.src/css/dark/main.css";
+          topnav.href = "/.src/css/dark/topnav.css";
+          header.href = "/.src/css/dark/header.css";
+          footer.href = "/.src/css/dark/footer.css";
+          assets.href = "/.src/css/dark/assets.css";
+        } else {
+          main.href = "/.src/css/light/main.css";
+          topnav.href = "/.src/css/light/topnav.css";
+          header.href = "/.src/css/light/header.css";
+          footer.href = "/.src/css/light/footer.css";
+          assets.href = "/.src/css/light/assets.css";
+        }
+      }
+      </script>
 </html>

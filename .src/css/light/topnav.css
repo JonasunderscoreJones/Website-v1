@@ -11,7 +11,7 @@
   .navbar {
     overflow: hidden;
     background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'sary_soft_semiboldregular';
     z-index: 9999999;
   }
   .navbar a, button {
@@ -86,7 +86,7 @@
     width: 33.33%;
     padding: 10px;
     background-color: #ccc;
-    height: 250px;
+    height: 330px;
   }
   
   .column a {
@@ -180,7 +180,6 @@
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font: inherit;
     margin: 3px;
   }
 
@@ -192,3 +191,40 @@
   .column a:hover {
     color: white;
   }
+
+  .expandonhover {
+    float: right;
+    width: 55px;
+    height: 55px;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    overflow: hidden;
+  }
+  .navbar:hover .expandonhover {
+    width: 230px;
+  }
+
+  #website-under-construction {
+    background-color: orange;
+    color: #333333;
+    width: auto;
+    height: 50px;
+    display: inline-block;
+    width: 240px;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    overflow: hidden;
+    background-image: url(/.src/assets/warning-symbolic-dark.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 10px;
+  }
+
+  @media screen and (max-width: 1021px) {
+    .navbar:hover #website-under-construction {
+      width: 50px;
+    }
+}
+
+  
