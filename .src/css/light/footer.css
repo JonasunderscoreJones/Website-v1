@@ -1,10 +1,18 @@
+  body {
+      margin: 0px;
+      padding: 0px;
+      
+  }
+  
+  
   footer {
       bottom: 0;
       width: 100%;
-      background-image: url("/.src/misc/footerBg.png");
+      background-image: url("/.src/assets/misc/footerBg.png");
       background-size: cover;
       z-index: -10;
       padding-top: 100px;
+      position: absolute;
   }
   footer a {
     margin: 5px;

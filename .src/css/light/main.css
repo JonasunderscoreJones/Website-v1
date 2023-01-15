@@ -9,7 +9,7 @@
 
 html {
   font-family: 'sary_soft_semiboldregular';
-  background-color: #bababa;
+  
   margin: 0px;
 }
 
@@ -20,6 +20,15 @@ html {
 
   #headerContent {
     background-image: url("/.src/assets/misc/headerBg.png");
-    background-position: bottom;
+    background-position: bottom left;
     background-size: cover;
   }
+
+  @media only screen and (max-device-width:842px) {
+    p, a {
+      /*font-size: 50px;*/
+    }
+    #error-msg {
+      display: none;
+    }
+}

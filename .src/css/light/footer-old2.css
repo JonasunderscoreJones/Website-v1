@@ -1,0 +1,59 @@
+  footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-image: url("/src/misc/footerBg.png");
+      background-size: cover;
+      z-index: -10;
+      padding-top: 100px;
+      overflow: hidden;
+  }
+  footer a {
+    margin: 5px;
+    background-color: #10335C;
+  }
+  
+
+  .contactIconDiv {
+    background-color: gray;
+      width: 31px;
+      border-radius: 5px;
+      padding: 3px;
+      padding-bottom: 0px;
+  }
+  
+
+  #innerFooterBox {
+      margin: 20%;
+      margin-top: 600px;
+      margin-bottom: 15px;
+      display: flex;
+  }
+  #innerFooterBox div {
+      margin: 10px;
+  }
+
+  
+  #toplinks {
+      flex: content;
+      flex-direction: column;
+  }
+  #topLinks a, h1 {
+      background-color: transparent;
+      color: white;
+      text-decoration: none;
+      font-size: 30px;
+  }
+  #topLinks div a {
+      text-align: right;
+  }
+
+  .footer-bar {
+      background-color: black;
+      padding: 0px;
+      color: white;
+      text-align: center;
+  }
+  .footer-bar a {
+      background-color: black;
+  }
