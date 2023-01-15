@@ -1,9 +1,13 @@
-.generic_popup {
+#small_devices {
     display: none;
+    position: fixed;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
   }
   @media only screen and (max-device-width:842px) {
     /* show the popup */
-    .generic_popup { display: block; }
+    #small_devices { display: block; }
 }
 
 .generic_popup {

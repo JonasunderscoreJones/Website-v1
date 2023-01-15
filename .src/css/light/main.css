@@ -25,9 +25,6 @@ html {
   }
 
   @media only screen and (max-device-width:842px) {
-    p, a {
-      /*font-size: 50px;*/
-    }
     #error-msg {
       display: none;
     }
