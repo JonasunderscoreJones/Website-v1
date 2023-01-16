@@ -214,7 +214,7 @@
     transition: width 0.5s;
     -webkit-transition: width 0.5s;
     overflow: hidden;
-    background-image: url(/.src/assets/warning-symbolic-dark.png);
+    background-image: url(/.src/assets/icons/warning-symbolic-dark.png);
     background-size: 30px 30px;
     background-repeat: no-repeat;
     background-position: left center;
