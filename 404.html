@@ -1,0 +1,84 @@
+<link id="style-main" rel="stylesheet" href="/.src/css/light/main.css">
+<html>
+    <body>
+        <div style="position: absolute;top: 0;left: 20px;text-align: left">
+            <h2>Looks like you're lost</h2>
+            <a id="back_button">Go back to previous site</a>
+            <h3>Quick Access</h3>
+            <a href="/">Home</a>
+            <br>
+            <a href="/projects/">Projects</a>
+            <br>
+            <a href="/downloads/">Downloads</a>
+            <br>
+            <a href="/news/">News</a>
+            <h3>Links</h3>
+            <a href="https://youtube.com/c/JonasJonesJonasJones/">YouTube</a>
+            <br>
+            <a href="https://github.com/J-onasJones/">GitHub</a>
+            <br>
+            <a href="https://discord.gg/V2EsuUVmWh/">Discord</a>
+            <br>
+            <a href="https://twitter.com/Jonas_Jones_/">Twitter</a>
+            <br>
+            <a href="https://www.reddit.com/user/Jonas_Jones_">Reddit</a>
+            <br>
+            <a href="https://www.instagram.com/_jonas_jones_/">Instagram</a>
+        </div>
+        <div>
+            <h1>404</h1>
+            <div id="hoverer">
+                <div class="gif"></div>
+                <a id="hoveree" style="display:none;color: black;" href="https://www.reddit.com/r/LoadingIcons/comments/lsx9tn/i_was_told_to_post_this_gif_here_a_little/">https://www.reddit.com/r/LoadingIcons/comments/lsx9tn/i_was_told_to_post_this_gif_here_a_little/</a>
+            </div>
+            
+        </div>
+    </body>
+    <style>
+        body {
+            background-image: url("/.src/assets/misc/404.png");
+            background-position: top left;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0;
+        }
+        h1 {
+            font-size: 150px;
+        }
+        div {
+            text-align: center;
+            margin: 0 auto;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        .gif {
+        background-image: url('/.src/assets/misc/404.gif');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 30vw;
+        height: 30vh;
+        }
+        input {
+            color: black;
+            background-color: none;
+            border: none;
+            cursor: pointer;
+        }
+        #back_button {
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.getElementById('hoverer').onmouseover = function(){
+            document.getElementById('hoveree').style.display = "block";
+        }
+        document.getElementById('hoverer').onmouseout = function(){
+            document.getElementById('hoveree').style.display = "none";
+        }
+        document.getElementById('back_button').onclick= function(){
+            history.go(-1);}
+    </script>
+</html>
